@@ -95,3 +95,15 @@ console.log("All grades: ");
 console.log(grades);
 console.log("Passing grades: ");
 console.log(passGrades);
+
+// diff between join and() toString()
+/*
+toString() is a method that you can find not only in Array Arr, but in every object.
+join allows you to convert every element of the Array object in to a string,
+and joining together using a separator. It behaves just like toString for Array Arr, 
+but you can also specify the separator:
+*/
+
+var Arr = ['i', 'love', 'JS'];
+console.log(Arr.join(" "))   //i love JS
+console.log(Arr.toString()); // i,love,JS

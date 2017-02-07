@@ -15,8 +15,9 @@ next (function) : Moves current position forward one element
 currPos (function) : Returns the current position in list
 moveToPos (function) : Moves the current position to specified position
 */
+// **********************************************************************************
 
-// with prototype
+/* with prototype */
 function List() {
    this.listSize = 0;
    this.pos = 0;
@@ -182,7 +183,8 @@ console.log(nameList.getElement()); // Anant
 
 // ****************************************************************************************
 
-// without prototype
+/* with prototype */
+
 function List() {
    this.listSize = 0;
    this.pos = 0;

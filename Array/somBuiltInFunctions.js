@@ -81,6 +81,8 @@ else {
    console.log("no numbers are even");
 }
 
+// The map method is used to convert each item of an array, while the filter method is used to select certain items of an array.
+
 // The filter() function works similarly to every(), but instead of returning true if all the elements of an array satisfy
 // a Boolean function, the function returns a new array consisting of those elements that satisfy the Boolean function.
 function passing(num) {

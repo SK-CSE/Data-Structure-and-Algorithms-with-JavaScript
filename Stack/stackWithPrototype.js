@@ -8,11 +8,10 @@ Stack.prototype.push = function(element){
 }
 Stack.prototype.pop = function(){
   if(this.top !==0){
-  console.log( this.dataStore[--this.top]);
-  return true;
+  console.log( );
+  return this.dataStore[--this.top];
   }
-  console.log("underflow");
-  return false;
+  return "underflow";
 }
 
 Stack.prototype.peek = function(){
@@ -30,7 +29,7 @@ Stack.prototype.clear = function(){
 }
 
 Stack.prototype.length = function(){
-  console.log(this.top);
+  return this.top;
 }
 
 Stack.prototype.print = function(){
@@ -46,37 +45,38 @@ Stack.prototype.print = function(){
   return false;
 }
 
+
 var stack = new Stack();
 stack.push(10);
 stack.push(20);
 
 stack.print(); // [ 10, 20 ]
-stack.length(); // 2
+console.log(stack.length()); // 2
 
-stack.pop(); // 20
-stack.length(); // 1
+console.log(stack.pop()); // 20
+console.log(stack.length()); // 1
 stack.print();  // [10]
 
 stack.push(30);
 stack.peek(); // 30
 stack.print(); // [ 10, 30 ]
-stack.length(); // 2
+console.log(stack.length()); // 2
 
 stack.clear();
 stack.print(); // Stack is empty
 
 stack.clear();
-stack.length(); // 0
+console.log(stack.length()); // 0
 
 stack.peek(); // Stack is empty
-stack.length(); // 0
+console.log(stack.length()); // 0
 
-stack.pop(); // underflow
-stack.length(); // 0
+console.log(stack.pop()); // underflow
+console.log(stack.length()); // 0
 
 stack.push(40);
 stack.push(50);
 
 stack.peek(); // 50
-stack.length(); // 2
+console.log(stack.length()); // 2
 stack.print(); // [40,50]

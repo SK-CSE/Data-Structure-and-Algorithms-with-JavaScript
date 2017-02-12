@@ -69,14 +69,14 @@ stack.clear();
 stack.length(); // 0
 
 stack.peek(); // Stack is empty
-stack.length(); // 2
+stack.length(); // 0
 
-stack.pop(); // undefined
-stack.length(); // 2
+stack.pop(); // underflow
+stack.length(); // 0
 
 stack.push(40);
 stack.push(50);
 
-stack.peek(); // undefined
+stack.peek(); // 50
 stack.length(); // 2
 stack.print(); // [40,50]

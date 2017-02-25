@@ -5,7 +5,6 @@ this.next = null;
 
 function LList() {
 this.head = new Node("head");
-
 }
 
 LList.prototype.remove = function(item) {
@@ -51,7 +50,6 @@ var names = new LList();
 names.insert("Saurabh", "head");
 names.insert("Suman", "Saurabh");
 names.insert("Amit", "Suman");
-
 names.insert("priyanka", "Amit");
 names.insert("Alman", "priyanka");
 names.display();

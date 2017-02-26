@@ -98,6 +98,17 @@ console.log(grades);
 console.log("Passing grades: ");
 console.log(passGrades);
 
+// remove Duplicate elements from array
+var a = [1,1,1,12,3,4,2,4,];
+
+function removeDuplicate(arr){
+  return arr.filter(function(item,index,self){
+    return self.indexOf(item) == index;
+  });
+}
+var b = removeDuplicate(a);
+console.log(b); // [ 1, 12, 3, 4, 2 ]
+
 // diff between join and() toString()
 /*
 toString() is a method that you can find not only in Array Arr, but in every object.

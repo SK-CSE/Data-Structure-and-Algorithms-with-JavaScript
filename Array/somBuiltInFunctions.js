@@ -109,6 +109,14 @@ function removeDuplicate(arr){
 var b = removeDuplicate(a);
 console.log(b); // [ 1, 12, 3, 4, 2 ]
 
+// sum of element in array
+function sum(arr){
+  return arr.reduce(function(a,b){
+    return a+b
+  },0)
+}
+console.log(sum(a)); // 28
+
 // diff between join and() toString()
 /*
 toString() is a method that you can find not only in Array Arr, but in every object.

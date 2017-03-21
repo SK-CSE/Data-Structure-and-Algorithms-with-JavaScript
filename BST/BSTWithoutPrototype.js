@@ -114,23 +114,22 @@ nums.insert(8);
 nums.insert(12);
 nums.insert(17);
 nums.insert(25);
-console.log("Inorder traversal: ");
+console.log(`Inorder traversal: `);
 inOrder(nums.root);
-console.log("***********************");
-console.log("preOrder traversal: ");
+console.log(`***********************`);
+console.log(`preOrder traversal: `);
 preOrder(nums.root);
-console.log("***********************");
-console.log("postOrder traversal: ");
+console.log(`***********************`);
+console.log(`postOrder traversal: `);
 postOrder(nums.root);
 var min = nums.getMin();
-console.log("The minimum value of the BST is: " + min);
-console.log("\n");
+console.log(`The minimum value of the BST is: ${min}\n`);
 var max = nums.getMax();
-console.log("The maximum value of the BST is: " + max);
+console.log(`The maximum value of the BST is: ${max}`);
 var found = nums.find(process.argv[2]);
 if (found != null) {
-   console.log("Found " + process.argv[2] + " in the BST.");
+   console.log(`Found ${process.argv[2]} in the BST.`);
 }
 else {
-   console.log(process.argv[2] + " was not found in the BST.");
+   console.log(`${process.argv[2]} was not found in the BST.`);
 }

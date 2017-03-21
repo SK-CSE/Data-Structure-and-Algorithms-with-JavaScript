@@ -18,6 +18,7 @@ function List() {
    this.currPos = currPos;
    this.moveToPos = moveToPos;
    this.getElement = getElement;
+
 }
 
 // This function appends a new element onto the list at the next available position

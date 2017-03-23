@@ -4,6 +4,7 @@ this.next = null;
 }
 
 class LList {
+	
   constructor() {
   this.head = new Node("head");
   }

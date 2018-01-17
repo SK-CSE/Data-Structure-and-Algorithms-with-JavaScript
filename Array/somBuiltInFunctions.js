@@ -47,11 +47,8 @@ nums.sort();
 console.log(nums); // 1,100,2,200,3,4
 
 // compare function for sorting
-function compare(num1, num2) {
-   return num1 - num2;
-}
 var nums = [3,1,2,100,4,200];
-nums.sort(compare);
+nums.sort((a,b)=>a-b);
 console.log(nums); // 1,2,3,4,100,200
 
 //  every(), applies a Boolean function to an array and returns true if the function can return true for every element in the array. 
@@ -102,18 +99,14 @@ console.log(passGrades);
 var a = [1,1,1,12,3,4,2,4,];
 
 function removeDuplicate(arr){
-  return arr.filter(function(item,index,self){
-    return self.indexOf(item) == index;
-  });
+   return arr.filter((item, index, self)=> self.indexOf(item) == index);
 }
 var b = removeDuplicate(a);
 console.log(b); // [ 1, 12, 3, 4, 2 ]
 
 // sum of element in array
 function sum(arr){
-  return arr.reduce(function(a,b){
-    return a+b
-  },0)
+  return args.reduce((args,total)=>total+args,0);
 }
 console.log(sum(a)); // 28
 

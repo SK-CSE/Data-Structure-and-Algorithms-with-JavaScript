@@ -106,7 +106,7 @@ console.log(b); // [ 1, 12, 3, 4, 2 ]
 
 // sum of element in array
 function sum(arr){
-  return args.reduce((args,total)=>total+args,0);
+  return arr.reduce((args,total)=>total+args,0);
 }
 console.log(sum(a)); // 28
 

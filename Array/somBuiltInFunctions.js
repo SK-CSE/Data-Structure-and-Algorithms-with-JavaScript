@@ -24,7 +24,7 @@ console.log(nums); // 1,2,3,4,5,6,7,8,9
 // The elements spliced into an array can be any list of items passed to the function, not necessarily a named array of items. For example:
 var nums = [1,2,3,7,8,9];
 nums.splice(3,0,4,5,6);
-console.log(nums);
+console.log(nums); // 1,2,3,4,5,6,7,8,9
 
 // In the preceding example, the arguments 4, 5, and 6 represent the list of elements we want to insert into nums.
 // Here is an example of using splice() to remove elements from an array:
